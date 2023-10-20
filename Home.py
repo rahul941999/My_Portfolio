@@ -27,7 +27,6 @@ with col3:
     for index, row in data[::2].iterrows():
         st.subheader(row['title'])
         st.write(row['description'])
-        print(f"images/{row['image']}")
         st.image(f"images/{row['image']}")
         col3_c1, col3_c2 = st.columns(2)
         with col3_c1:
