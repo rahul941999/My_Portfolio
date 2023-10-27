@@ -28,20 +28,12 @@ with col3:
         st.subheader(row['title'])
         st.write(row['description'])
         st.image(f"images/{row['image']}")
-        col3_c1, col3_c2 = st.columns(2)
-        with col3_c1:
-            st.link_button(label='link to web app', url=f"{row['url']}")
-        with col3_c2:
-            st.write(f"[source code]({row['url']})")
+        st.link_button(label='link', url=f"{row['url']}")
         st.divider()
 with col4:
     for index, row in data[1::2].iterrows():
         st.subheader(row['title'])
         st.write(row['description'])
         st.image("images/"+row['image'])
-        col4_c1, col4_c2 = st.columns(2)
-        with col4_c1:
-            st.link_button(label='link to web app', url=f"{row['url']}")
-        with col4_c2:
-            st.write(f"[source code]({row['url']})")
+        st.link_button(label='link', url=f"{row['url']}")
         st.divider()
