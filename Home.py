@@ -18,7 +18,8 @@ with col2:
     st.info(content)
 st.divider()
 st.text('Below you can find some of the app that i have built '
-        'in Python. Feel free to contact me!')
+        'in Python. Feel free to contact me! (if a link return'
+        'you to google then the app link is not updated yet.)')
 st.divider()
 col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
 data = pd.read_csv("data.csv")
