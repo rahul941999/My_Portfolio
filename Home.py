@@ -29,7 +29,10 @@ with col3:
         st.subheader(row['title'])
         st.write(row['description'])
         st.image(f"images/{row['image']}")
-        st.link_button(label='link', url=f"{row['url']}")
+        if row['url'] != "https://pythonhow.com":
+            st.link_button(label='link', url=f"{row['url']}")
+        else:
+            st.button(label="in development")
         st.divider()
 with col4:
     for index, row in data[1::2].iterrows():
