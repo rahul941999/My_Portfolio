@@ -18,8 +18,7 @@ with col2:
     st.info(content)
 st.divider()
 st.write('Below you can find some of the app that i have built '
-        'in Python. Feel free to contact me! (if a link return'
-        ' you to google then the app link is not updated yet.)')
+         'in Python. Feel free to contact me!')
 st.divider()
 col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
 data = pd.read_csv("data.csv")
@@ -29,7 +28,7 @@ with col3:
         st.subheader(row['title'])
         st.write(row['description'])
         st.image(f"images/{row['image']}")
-        if row['url'] != "https://pythonhow.com":
+        if row['url'] != "https://google.com":
             st.link_button(label='link', url=f"{row['url']}")
         else:
             st.button(label="in development")
