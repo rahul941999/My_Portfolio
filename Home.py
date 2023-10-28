@@ -39,5 +39,9 @@ with col4:
         st.subheader(row['title'])
         st.write(row['description'])
         st.image("images/"+row['image'])
-        st.link_button(label='link', url=f"{row['url']}")
+        if row['url'] != "https://google.com":
+            st.link_button(label='link', url=f"{row['url']}")
+        else:
+            st.button(label="not available",
+                      help="this project is still in work", key=f"bt{index}")
         st.divider()
