@@ -31,7 +31,8 @@ with col3:
         if row['url'] != "https://google.com":
             st.link_button(label='link', url=f"{row['url']}")
         else:
-            st.button(label="in development")
+            st.button(label="not available",
+                      help="this project is still in work", key=f"bt{index}")
         st.divider()
 with col4:
     for index, row in data[1::2].iterrows():
