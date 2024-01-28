@@ -5,8 +5,11 @@ import os
 host = 'smtp.elasticemail.com'
 port = 2525
 user_name = "rahul941999@gmail.com"
+# user_name = "rahul941999@yahoo.com"
 password = os.getenv("ElasticeEmail")
+# password = os.getenv("Elastice_yahoo")
 receiver = "rahul941999@yahoo.com"
+# receiver = "rahul941999@gmail.com"
 context = ssl.create_default_context()
 
 

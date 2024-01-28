@@ -19,6 +19,8 @@ with col2:
 st.divider()
 st.write('Below you can find some of the app that i have built '
          'in Python. Feel free to contact me!')
+st.write('[GitHub Repository]'
+         '(https://github.com/rahul941999?tab=repositories)')
 st.divider()
 col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
 data = pd.read_csv("data.csv")
