@@ -19,6 +19,8 @@ with col2:
 st.divider()
 st.write('Below you can find some of the app that i have built '
          'in Python. Feel free to contact me!')
+st.write('<a href="mailto:rahul941999@gmail.com">Send Email</a>',
+         unsafe_allow_html=True)
 st.write('[GitHub Repository]'
          '(https://github.com/rahul941999?tab=repositories)')
 st.divider()
