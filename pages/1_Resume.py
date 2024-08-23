@@ -1,4 +1,4 @@
 import streamlit as st
 
-st.image("https://drive.google.com/open?id=13lKo6cb5pVEuC7OxE2di_"
-         "dMIhfRt2wmQ&usp=drive_fs", width=800)
+st.image("https://drive.google.com/file/d/13lKo6cb5pVEuC7OxE2di_dMIhfRt2wmQ/"
+         "view?usp=sharing", width=800)
