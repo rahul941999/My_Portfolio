@@ -12,4 +12,3 @@ st.title("Resume")
 resume = st.file_uploader("../pdf/Rahul_resume.pdf", type="pdf")
 if resume is not None:
     st.pdf(resume)
-
