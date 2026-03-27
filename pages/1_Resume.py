@@ -1,6 +1,5 @@
 import requests
 import streamlit as st
-st.title("Resume")
 # image ID
 # file_id = "13lKo6cb5pVEuC7OxE2di_dMIhfRt2wmQ"
 #
@@ -9,6 +8,5 @@ st.title("Resume")
 #
 # response = requests.get(url)
 # st.image(response.content)
-resume = "../pdf/Rahul_resume.pdf"
-if resume is not None:
-    st.pdf(resume)
+
+st.pdf("../pdf/Rahul_resume.pdf")
