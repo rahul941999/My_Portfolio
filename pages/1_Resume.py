@@ -9,6 +9,6 @@ st.title("Resume")
 #
 # response = requests.get(url)
 # st.image(response.content)
-resume = st.file_uploader("../pdf/Rahul_resume.pdf", type="pdf")
+resume = "../pdf/Rahul_resume.pdf"
 if resume is not None:
     st.pdf(resume)
